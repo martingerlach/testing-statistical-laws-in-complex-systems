@@ -9,9 +9,12 @@ Martin Gerlach, Eduardo G. Altmann, [Testing Statistical Laws in Complex Systems
 ## Setup:
 
 - get the repository:
-```git clone https://github.com/martingerlach/testing-statistical-laws-in-complex-systems
-```
-- install the following packages (e.g. via pip): ``` numpy, scipy, statsmodels, pandas, matplotlib, mpmath```
+
+```git clone https://github.com/martingerlach/testing-statistical-laws-in-complex-systems```
+
+- install the following packages (e.g. via pip):
+
+``` numpy, scipy, statsmodels, pandas, matplotlib, mpmath```
 
 
 ## Navigation
