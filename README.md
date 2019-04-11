@@ -12,9 +12,9 @@ Martin Gerlach, Eduardo G. Altmann, [Testing Statistical Laws in Complex Systems
 
 ```git clone https://github.com/martingerlach/testing-statistical-laws-in-complex-systems```
 
-- install the following packages (e.g. via pip):
+- install the following python packages (e.g. via pip):
 
-``` numpy, scipy, statsmodels, pandas, matplotlib, mpmath```
+``` numpy, scipy, statsmodels, pandas, matplotlib, mpmath,statsmodel,stats```
 
 
 ## Navigation
@@ -34,5 +34,5 @@ We analyze several datasets which we included in the repo. They are contained in
 
 - Earthquakes: from the [Southern California Earthquake Data Center](http://scedc.caltech.edu/ftp/catalogs/hauksson/Socal_focal/YSH_2010.hash)
 - Books from Project Gutenberg: from the [Standardized Project Gutenberg Corpus](https://github.com/pgcorpus/gutenberg)
-- Networks: [KONECT Project: Internet Topology](http://konect.cc/networks/topology) in the folder ```data/networks/as20000102```. The timeseries data for the sequence of degrees is in the folder ```data/networks/sampling``` and was obtained using the code in [ADD.]
+- Networks: [KONECT Project: Internet Topology](http://konect.cc/networks/topology) in the folder ```data/networks/```. The timeseries data for the sequence of degrees is in the folder ```data/networks/sampling``` and was obtained using the code in ```src/sampling-nets.py```
 - Synthetic data: The timeseries can be generated using the code in ```src/modules_mcmc_zipf.py```. There is an example of a correlated timeseries in ```data/synthetic/ts_synthetic_Ntypes1000_Ntokens100000_alpha1.5_mu0.01_k5```
