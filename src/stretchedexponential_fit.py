@@ -69,13 +69,17 @@ def log_Fx_se_disc(x,a,b,xmin=0):
 def Px_se_disc(x,a,b,xmin=0):
     return Fx_se_disc(x,a,b,xmin=xmin)-Fx_se_disc(x+1,a,b,xmin=xmin)
 
-def log_Px_se_disc(x,a,b,xmin=0):
+def log_Px_se_disc(x,a,b,xmin=0,eps_beta=10.0**(-6)):
     '''
     Using trick:
     log P = log ( F(x)-F(x+1) )
     log (b-a) = log[ a*( exp(log(b/a))-1 )]
               = log(F(x)) + log( exp[log(F(x)) - log(F(x+1)) ] - 1 )
+
+    eps_beta is the minium value for beta. the distribution is only defined for beta > 0.
     '''
+    if b <= 0.: ## enforce positive value for b to avoid invalid value of log
+        b = eps_beta
     P = log_Fx_se_disc(x+1,a,b,xmin=xmin)
     P += np.log( np.exp( log_Fx_se_disc(x,a,b,xmin=xmin)-log_Fx_se_disc(x+1,a,b,xmin=xmin)   )  -1.0)
     return P
