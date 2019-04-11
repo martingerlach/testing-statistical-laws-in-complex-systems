@@ -14,7 +14,7 @@ Martin Gerlach, Eduardo G. Altmann, [Testing Statistical Laws in Complex Systems
 
 - install the following python packages (e.g. via pip):
 
-``` numpy, scipy, statsmodels, pandas, matplotlib, mpmath,statsmodel,stats```
+``` numpy, scipy, pandas, matplotlib, mpmath, statsmodels```
 
 
 ## Navigation
